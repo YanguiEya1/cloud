@@ -19,6 +19,7 @@ const Home = () => {
   const [todos, setTodos] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   useEffect(() => {
+    console.log(API_URL);
     const getData = async () => {
       getTodos();
     };
